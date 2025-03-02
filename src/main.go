@@ -1,4 +1,4 @@
-package getman
+package main
 
 import "fmt"
 

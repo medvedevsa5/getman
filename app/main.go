@@ -1,9 +1,7 @@
 package main
 
-import (
-    printer "getman/lib/print"
-)
+import "os"
 
 func main() {
-	printer.PrintHello()
+	os.Exit(0)
 }

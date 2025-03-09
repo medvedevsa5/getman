@@ -1,7 +1,12 @@
 package main
 
-import "os"
+import (
+	"getman/lib/cmd"
+	"os"
+)
 
 func main() {
-	os.Exit(0)
+	if err := cmd.Execute(); err != nil {
+		os.Exit(1)
+	}
 }

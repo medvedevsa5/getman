@@ -1,7 +1,14 @@
 package cmd
 
-import "os"
+import (
+	"github.com/spf13/cobra"
+)
 
-func test() {
-	os.Exit(1)
+var rootCmd = &cobra.Command{
+	Use:  "getman ...",
+	Long: "getman - the cli tool for api testing",
+}
+
+func Execute() error {
+	return rootCmd.Execute()
 }
